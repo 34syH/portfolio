@@ -1,0 +1,19 @@
+/* Chronological activity archive */
+.history-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:11vw;align-items:end;margin-bottom:90px}
+.history-intro h2{font-size:clamp(2.7rem,5.3vw,5.5rem);line-height:1.02;letter-spacing:-.06em;font-weight:500}
+.history-intro h2 em{color:var(--olive)}
+.history-intro>p{color:var(--muted);font-size:.92rem}
+.timeline{border-top:1px solid var(--ink)}
+.year-group{display:grid;grid-template-columns:220px 1fr;border-bottom:1px solid var(--ink)}
+.year{padding:42px 0;font-size:clamp(2.3rem,4vw,4rem);line-height:1;letter-spacing:-.06em;font-weight:500}
+.year-events{border-left:1px solid var(--line)}
+.history-item{display:grid;grid-template-columns:80px 1fr auto;gap:28px;padding:42px 0 42px 38px;border-bottom:1px solid var(--line)}
+.history-item:last-child{border-bottom:0}
+.history-item time{color:var(--olive);font-size:.76rem;font-weight:700}
+.history-type{margin-bottom:5px;color:var(--muted);font-size:.64rem;font-weight:700;letter-spacing:.12em}
+.history-item h4{margin:0;font-size:1.25rem;letter-spacing:-.03em}
+.history-item div>p:last-child{margin-top:7px;color:var(--muted);font-size:.86rem}
+.history-item ul{display:flex;gap:6px;align-items:flex-start;margin:0;padding:0;list-style:none}
+.history-item li{padding:5px 9px;border:1px solid var(--line);border-radius:999px;font-size:.62rem;font-weight:600}
+@media(max-width:800px){.history-intro{grid-template-columns:1fr;gap:24px;margin-bottom:55px}.year-group{grid-template-columns:1fr}.year{padding:32px 0 22px}.year-events{border-left:0}.history-item{grid-template-columns:52px 1fr;padding:28px 0;gap:14px}.history-item ul{grid-column:2;flex-wrap:wrap}}
+
