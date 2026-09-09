@@ -1,0 +1,87 @@
+.career-heading {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 11vw;
+  align-items: end;
+  margin-bottom: 70px;
+}
+
+.career-heading h2 {
+  font-size: clamp(2.7rem, 5.3vw, 5.5rem);
+  line-height: 1.02;
+  letter-spacing: -.06em;
+  font-weight: 500;
+}
+
+.career-heading h2 em { color: var(--olive); }
+.career-heading > p { max-width: 430px; color: var(--muted); }
+
+.career-pdf-card {
+  min-height: 320px;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--ink);
+  background: var(--lime);
+  transition: transform .25s, box-shadow .25s;
+}
+
+.career-pdf-card:hover,
+.career-pdf-card:focus-visible {
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.career-pdf-eyebrow {
+  color: var(--olive);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.career-pdf-card h3 {
+  margin: 18px 0 10px;
+  font-size: clamp(2.4rem, 5vw, 5.2rem);
+  line-height: .95;
+  letter-spacing: -.06em;
+}
+
+.career-pdf-card div > p:last-child {
+  color: rgba(17, 17, 15, .68);
+  font-size: .92rem;
+}
+
+.career-pdf-action {
+  align-self: flex-start;
+  padding: 13px 18px;
+  border: 1px solid var(--ink);
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.career-pdf-action span { margin-left: 22px; }
+
+.history-item-link {
+  color: inherit;
+  text-decoration: none;
+  transition: background .25s, padding .25s;
+}
+
+.history-item-link:hover,
+.history-item-link:focus-visible {
+  background: rgba(199, 255, 47, .22);
+}
+
+.history-item-link:focus-visible,
+.career-pdf-card:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 4px;
+}
+
+@media (max-width: 800px) {
+  .career-heading { grid-template-columns: 1fr; gap: 28px; }
+  .career-pdf-card { min-height: 270px; padding: 28px 24px; }
+  .career-pdf-card:hover,
+  .career-pdf-card:focus-visible { transform: translate(-4px, -4px); box-shadow: 4px 4px 0 var(--ink); }
+}
